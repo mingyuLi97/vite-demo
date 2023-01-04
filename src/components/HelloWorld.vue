@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-defineProps<{ msg: string }>()
+defineProps<{ msg: string }>();
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const count = ref(0)
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
   </p>
 
-  <p>See <code>README.md</code> for more information.</p>
+  <p>See <code>README.md</code> for more information11111.</p>
 
   <p>
     <a href="https://vitejs.dev/guide/features.html" target="_blank">
@@ -29,7 +29,7 @@ const count = ref(0)
   <button type="button" @click="count++">count is: {{ count }}</button>
   <p>
     Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    <code>components/HelloWorld.vu1e</code> to test hot module replacement.
   </p>
 </template>
 
