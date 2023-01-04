@@ -12,6 +12,9 @@ const variablePath = normalizePath(path.resolve('./src/assets/variable.scss'));
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  json: {
+    stringify: false
+  },
   css: {
     postcss: {
       plugins: [
@@ -33,5 +36,11 @@ export default defineConfig({
     viteEslint({
       include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue']
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@assets': path.join(__dirname, 'src/assets'),
+      '@': path.join(__dirname, 'src')
+    }
+  }
 });
