@@ -1,0 +1,10 @@
+// @import "./variable.scss";
+
+body {
+  background: pink;
+  & #app {
+    background: $theme-color;
+    display: flex;
+  }
+}
+
